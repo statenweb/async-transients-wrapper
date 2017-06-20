@@ -3,6 +3,8 @@ Cache Helper
 
 Wrapper for 10up's [Async Transients](https://github.com/10up/Async-Transients) library.
 
+Run composer install before running
+
 Sample usage:
 
 ```

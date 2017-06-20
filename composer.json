@@ -19,5 +19,6 @@
     "psr-4": {
       "Async_Cache_Helper\\": "async-cache-helper/"
     }
-  }
+  },
+  "type" : "wordpress-plugin"
 }
