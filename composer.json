@@ -1,0 +1,23 @@
+{
+  "name": "mgargano/foo",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:10up/Async-Transients.git"
+    }
+  ],
+  "require": {
+    "10up/async-transients": "dev-master"
+  },
+  "authors": [
+    {
+      "name": "Gargano, Matthew",
+      "email": "mgargano@penguinrandomhouse.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Async_Cache_Helper\\": "async-cache-helper/"
+    }
+  }
+}

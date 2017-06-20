@@ -1,0 +1,59 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "07a4bcff3e557ce044672161de288ca9",
+    "packages": [
+        {
+            "name": "10up/async-transients",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/10up/Async-Transients.git",
+                "reference": "5e8253509b3b7eb2d1180383232cf45228512379"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/10up/Async-Transients/zipball/5e8253509b3b7eb2d1180383232cf45228512379",
+                "reference": "5e8253509b3b7eb2d1180383232cf45228512379",
+                "shasum": ""
+            },
+            "type": "wordpress-library",
+            "autoload": {
+                "psr-4": {
+                    "TenUp\\AsyncTransients\\": "includes/TenUp/AsyncTransients"
+                },
+                "files": [
+                    "includes/helpers.php"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "10up",
+                    "homepage": "http://10up.com"
+                }
+            ],
+            "description": "Transients, that regenerate asynchronously once content is expired, and serve stale content in the mean time",
+            "support": {
+                "source": "https://github.com/10up/Async-Transients/tree/master",
+                "issues": "https://github.com/10up/Async-Transients/issues"
+            },
+            "time": "2016-04-27 00:09:14"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "10up/async-transients": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
