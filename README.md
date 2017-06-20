@@ -3,18 +3,19 @@ Cache Helper
 
 Wrapper for 10up's [Async Transients](https://github.com/10up/Async-Transients) library.
 
-Run composer install before running
+*NOTE*: run composer install before running, put this in your plugins directory and enable it
 
-Sample usage:
+Rudimentary sample usage:
 
 ```
-$function = function ($foo){
+$function = function ($value){
 	sleep( 2 );
-	return $foo . time();
+	// long running API call
+	return $value . time();
 
 };
 
-$async = new Cache( 'cachekey123', 'bar', 20, $function, array('prefix') );
+$async = new Cache( 'mycachekey123', 'bar', 20, $function, array('prefix') );
 
 $before = microtime(true);
 $val = $async->get();
