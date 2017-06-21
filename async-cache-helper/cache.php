@@ -57,11 +57,10 @@ class Cache {
 	public function set_callback( callable $callback ) {
 
 		$key           = $this->key;
-		$default_value = $this->default_value;
 		$length        = $this->length;
 		$args          = $this->args;
 
-		$this->internal_callback = function () use ( $callback, $key, $default_value, $length, $args ) {
+		$this->internal_callback = function () use ( $callback, $key, $length, $args ) {
 			$value = call_user_func_array( $callback, (array) $args );
 
 			return \TenUp\AsyncTransients\set_async_transient( $key, $value, $length );
