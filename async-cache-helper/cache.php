@@ -85,19 +85,10 @@ class Cache {
 	 */
 	public function get() {
 
-		if ( ! $this->default_value || \TenUp\AsyncTransients\get_async_transient( $this->key, $this->internal_callback,
-				(array) $this->args )
-		) {
-			return \TenUp\AsyncTransients\get_async_transient( $this->key, $this->internal_callback,
-				(array) $this->args );
-		}
-
-		return $this->default_value;
-
+		$value = \TenUp\AsyncTransients\get_async_transient( $this->key, $this->internal_callback, (array) $this->args ) );
+		return false === $value ? $this->default_value : $value;
 	}
-
 }
-
 
 
 
