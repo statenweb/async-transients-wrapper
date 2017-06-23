@@ -84,8 +84,7 @@ class Cache {
 	 * @return mixed
 	 */
 	public function get() {
-
-		$value = \TenUp\AsyncTransients\get_async_transient( $this->key, $this->internal_callback, (array) $this->args ) );
+		$value = \TenUp\AsyncTransients\get_async_transient( $this->key, $this->internal_callback, (array) $this->args );
 		return false === $value ? $this->default_value : $value;
 	}
 }
